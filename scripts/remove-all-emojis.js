@@ -18,7 +18,7 @@ function processDirectory(dir) {
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       processDirectory(fullPath);
-    } else if (entry.name.endsWith('.md') || entry.name.endsWith('.js') || entry.name.endsWith('.mts') || entry.name.endsWith('.json')) {
+    } else if (entry.name.endsWith('.md') || entry.name.endsWith('.js') || entry.name.endsWith('.mts') || entry.name.endsWith('.json') || entry.name.endsWith('.vue')) {
       const original = fs.readFileSync(fullPath, 'utf-8');
       let cleaned = stripEmojis(original);
       

@@ -1,6 +1,226 @@
-/* Modern typography & font legibility */
+/* =========================================================
+   PYTHON.ORG UNIFIED THEME PALETTE FOR ALL DOCUMENTATION
+   ========================================================= */
+
 :root {
-  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  /* Python.org Official Palette */
+  --py-blue: #306998;
+  --py-blue-dark: #2b5b84;
+  --py-navy: #1e415e;
+  --py-yellow: #ffd343;
+  --py-yellow-dark: #f2c735;
+  --py-bg-light: #f8fafc;
+  --py-text: #333333;
+
+  /* VitePress Core Brand Variables Override */
+  --vp-c-brand-1: #306998;
+  --vp-c-brand-2: #2b5b84;
+  --vp-c-brand-3: #1e415e;
+  --vp-c-brand-soft: rgba(48, 105, 152, 0.14);
+
+  --vp-c-yellow-1: #ffd343;
+  --vp-c-yellow-2: #f2c735;
+  --vp-c-yellow-soft: rgba(255, 211, 67, 0.14);
+
+  /* Nav Header Height (38px PythonTopBar + 64px VPNavBar) */
+  --vp-nav-height: 102px !important;
+
+  /* Font Families */
+  --vp-font-family-base: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Dark Mode Palette */
+.dark {
+  --vp-c-brand-1: #4a8cc7;
+  --vp-c-brand-2: #306998;
+  --vp-c-brand-3: #ffd343;
+  --vp-c-brand-soft: rgba(74, 140, 199, 0.2);
+}
+
+/* =========================================================
+   DOCUMENTATION NAVBAR - PYTHON NAVY STYLE
+   ========================================================= */
+
+.VPNav {
+  background-color: #2b5b84 !important;
+  border-bottom: 1px solid #1e415e !important;
+  height: auto !important;
+}
+
+.VPNavBar {
+  background-color: #2b5b84 !important;
+  border-bottom: none !important;
+  height: 64px !important;
+}
+
+.VPNavBarTitle .title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+}
+
+.VPNavBarMenuLink {
+  color: #d1e2f2 !important;
+  font-weight: 600 !important;
+  transition: color 0.15s ease;
+}
+
+.VPNavBarMenuLink:hover,
+.VPNavBarMenuLink.active {
+  color: #ffd343 !important;
+}
+
+/* Nav Dropdowns (Flyouts) */
+.VPFlyout .button {
+  color: #d1e2f2 !important;
+  font-weight: 600 !important;
+}
+
+.VPFlyout:hover .button,
+.VPFlyout.active .button {
+  color: #ffd343 !important;
+}
+
+.VPFlyout .menu {
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.VPMenuLink {
+  color: #333333 !important;
+  font-weight: 500 !important;
+}
+
+.VPMenuLink:hover,
+.VPMenuLink.active {
+  color: #306998 !important;
+  background-color: #f1f5f9 !important;
+  font-weight: 700 !important;
+}
+
+/* Navbar Search Button */
+.VPNavBarSearch .DocSearch-Button {
+  background-color: #ffffff !important;
+  border: 1px solid #cccccc !important;
+  border-radius: 4px !important;
+  color: #555555 !important;
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+  border-color: #ffd343 !important;
+}
+
+.VPNavBarSearch .DocSearch-Button-Placeholder {
+  color: #666666 !important;
+}
+
+/* Hide default minimal footer since PythonFooter is mounted in layout-bottom */
+.VPFooter {
+  display: none !important;
+}
+
+/* =========================================================
+   SIDEBAR & CONTENT STYLING
+   ========================================================= */
+
+/* Active Sidebar Item */
+.VPSidebarItem.is-active > .item > .link > .text {
+  color: #306998 !important;
+  font-weight: 700 !important;
+}
+
+.dark .VPSidebarItem.is-active > .item > .link > .text {
+  color: #ffd343 !important;
+}
+
+.VPSidebarItem .text:hover {
+  color: #2b5b84 !important;
+}
+
+/* Links in documentation content */
+.vp-doc a {
+  color: #306998;
+  font-weight: 600;
+  text-decoration-color: rgba(48, 105, 152, 0.3);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.vp-doc a:hover {
+  color: #1e415e;
+  text-decoration-color: #1e415e;
+}
+
+.dark .vp-doc a {
+  color: #60a5fa;
+}
+
+.dark .vp-doc a:hover {
+  color: #ffd343;
+}
+
+/* Code Group Tabs - Python Style */
+.vp-code-group .tabs {
+  background-color: #1f2937 !important;
+  border-bottom: 1px solid #374151 !important;
+}
+
+.vp-code-group .tabs label {
+  color: #9ca3af !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+}
+
+.vp-code-group .tabs label.active {
+  color: #ffd343 !important;
+  border-bottom-color: #ffd343 !important;
+}
+
+/* Buttons */
+.VPButton.brand {
+  background-color: #ffd343 !important;
+  color: #1e415e !important;
+  font-weight: 700 !important;
+  border: 1px solid #f2c735 !important;
+  border-radius: 4px !important;
+  transition: all 0.15s ease !important;
+}
+
+.VPButton.brand:hover {
+  background-color: #f2c735 !important;
+  transform: translateY(-1px);
+}
+
+.VPButton.alt {
+  border-radius: 4px !important;
+}
+
+/* Tables in Docs */
+.vp-doc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.vp-doc th {
+  background-color: #2b5b84 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 10px 14px;
+  border: 1px solid #1e415e;
+}
+
+.vp-doc td {
+  padding: 10px 14px;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc tr:nth-child(even) {
+  background-color: var(--vp-c-bg-soft);
 }
 
 /* Status & Risk Badges */
@@ -10,8 +230,7 @@
 .badge-sudo {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -45,64 +264,41 @@
   border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
-/* Dark mode badge adjustments */
-.dark .badge-safe {
-  background-color: rgba(34, 197, 94, 0.2);
-  color: #4ade80;
-}
-.dark .badge-mutating {
-  background-color: rgba(234, 179, 8, 0.2);
-  color: #facc15;
-}
-.dark .badge-danger {
-  background-color: rgba(239, 68, 68, 0.2);
-  color: #f87171;
-}
-.dark .badge-sudo {
-  background-color: rgba(168, 85, 247, 0.2);
-  color: #c084fc;
-}
-
 /* Progressive Disclosure (Details/Summary) Styling */
 details {
-  margin: 12px 0 18px 0;
-  padding: 10px 14px;
+  margin: 14px 0 20px 0;
+  padding: 12px 16px;
   background-color: var(--vp-c-bg-soft);
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid var(--vp-c-divider);
   transition: all 0.2s ease-in-out;
 }
 
 details[open] {
-  padding-bottom: 14px;
-  border-color: var(--vp-c-brand-1);
+  padding-bottom: 16px;
+  border-color: #306998;
 }
 
 summary {
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
+  font-size: 0.92rem;
+  color: #2b5b84;
   user-select: none;
   outline: none;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
 summary:hover {
-  color: var(--vp-c-brand-1);
+  color: #1e415e;
+}
+
+.dark summary {
+  color: #60a5fa;
 }
 
 details ul {
-  margin-top: 8px;
+  margin-top: 10px;
   margin-bottom: 4px;
   padding-left: 20px;
   font-size: 0.88rem;
-  color: var(--vp-c-text-1);
-}
-
-details code {
-  font-size: 0.82rem;
-  font-weight: 600;
 }
