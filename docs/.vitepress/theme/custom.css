@@ -1,0 +1,108 @@
+/* Modern typography & font legibility */
+:root {
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Status & Risk Badges */
+.badge-safe,
+.badge-mutating,
+.badge-danger,
+.badge-sudo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.badge-safe {
+  background-color: rgba(34, 197, 94, 0.15);
+  color: #16a34a;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.badge-mutating {
+  background-color: rgba(234, 179, 8, 0.15);
+  color: #ca8a04;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.badge-danger {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-sudo {
+  background-color: rgba(168, 85, 247, 0.15);
+  color: #9333ea;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+/* Dark mode badge adjustments */
+.dark .badge-safe {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+.dark .badge-mutating {
+  background-color: rgba(234, 179, 8, 0.2);
+  color: #facc15;
+}
+.dark .badge-danger {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+.dark .badge-sudo {
+  background-color: rgba(168, 85, 247, 0.2);
+  color: #c084fc;
+}
+
+/* Progressive Disclosure (Details/Summary) Styling */
+details {
+  margin: 12px 0 18px 0;
+  padding: 10px 14px;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  transition: all 0.2s ease-in-out;
+}
+
+details[open] {
+  padding-bottom: 14px;
+  border-color: var(--vp-c-brand-1);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  user-select: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+summary:hover {
+  color: var(--vp-c-brand-1);
+}
+
+details ul {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  padding-left: 20px;
+  font-size: 0.88rem;
+  color: var(--vp-c-text-1);
+}
+
+details code {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
