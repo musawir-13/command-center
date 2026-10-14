@@ -1,4 +1,4 @@
-# 🐘 PostgreSQL: Locks, Slowness & Emergency Ops
+# PostgreSQL: Locks, Slowness & Emergency Ops
 
 Solve hanging queries, deadlocks, connection pool exhaustion, and table bloat.
 

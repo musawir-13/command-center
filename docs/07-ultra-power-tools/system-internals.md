@@ -1,4 +1,4 @@
-# 🔴 Ultra & God-Tier Power Tools: Deep Forensics
+# Ultra & God-Tier Power Tools: Deep Forensics
 
 These are the rare, high-leverage power tools used by senior site reliability engineers, security researchers, and kernel developers when normal tools fail.
 

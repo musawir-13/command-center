@@ -1,6 +1,6 @@
 # Redis: Keys, Evictions & Latency Forensics <span class="badge-mutating">Intermediate</span>
 
-> **Module:** 🗄️ 5. Databases & Storage  
+> **Module:** 5. Databases & Storage  
 > **Topic Focus:** Memory limits, bigkeys detection, safe unlinking, and slowlog.
 
 ---
@@ -25,7 +25,7 @@ Get-Command *redis*
 :::
 
 <details>
-<summary>🔍 Explain core flags & parameters</summary>
+<summary>Explain core flags & parameters</summary>
 
 * `--help`: Display full parameter manual and syntax reference.
 * `-v` / `--verbose`: Increase output verbosity to reveal system decisions.
@@ -69,10 +69,10 @@ system-recover --target="redis-cache-operations-and-memory" --dry-run
 
 | Flag / Option | Type | Description | Safe in Prod? |
 | :--- | :--- | :--- | :--- |
-| `--dry-run` | Boolean | Preview execution plan without touching system state | 🟢 Yes |
-| `--timeout=10s` | Duration | Abort hanging operations after specified window | 🟢 Yes |
-| `--force` | Switch | Bypass confirmation prompts and override locks | 🚨 Use with Care |
-| `--json` | Output | Format results as raw machine-readable JSON for piping to `jq` | 🟢 Yes |
+| `--dry-run` | Boolean | Preview execution plan without touching system state | Yes |
+| `--timeout=10s` | Duration | Abort hanging operations after specified window | Yes |
+| `--force` | Switch | Bypass confirmation prompts and override locks | Use with Care |
+| `--json` | Output | Format results as raw machine-readable JSON for piping to `jq` | Yes |
 
 ---
 

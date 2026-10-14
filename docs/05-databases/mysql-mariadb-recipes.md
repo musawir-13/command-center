@@ -1,4 +1,4 @@
-# 🐬 MySQL & MariaDB: Queries, Locks & Performance
+# MySQL & MariaDB: Queries, Locks & Performance
 
 Identify slow queries, unblock hanging transactions, and inspect process lists.
 

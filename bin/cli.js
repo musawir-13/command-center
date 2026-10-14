@@ -106,7 +106,7 @@ function search(query) {
 
 function printUsage() {
   console.log(`
-${bold(cyan('⚡ Command Center CLI'))} - Instant command & problem lookup
+${bold(cyan('Command Center CLI'))} - Instant command & problem lookup
 
 ${bold('Usage:')}
   node bin/cli.js <search query>

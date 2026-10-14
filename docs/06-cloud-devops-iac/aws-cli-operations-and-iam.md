@@ -1,6 +1,6 @@
 # AWS CLI: S3, EC2 & IAM Security Forensics <span class="badge-mutating">Intermediate</span>
 
-> **Module:** ☁️ 6. Cloud, DevOps & IaC  
+> **Module:** 6. Cloud, DevOps & IaC  
 > **Topic Focus:** S3 sync parallelism, security group audits, and instance metadata.
 
 ---
@@ -25,7 +25,7 @@ Get-Command *aws*
 :::
 
 <details>
-<summary>🔍 Explain core flags & parameters</summary>
+<summary>Explain core flags & parameters</summary>
 
 * `--help`: Display full parameter manual and syntax reference.
 * `-v` / `--verbose`: Increase output verbosity to reveal system decisions.
@@ -69,10 +69,10 @@ system-recover --target="aws-cli-operations-and-iam" --dry-run
 
 | Flag / Option | Type | Description | Safe in Prod? |
 | :--- | :--- | :--- | :--- |
-| `--dry-run` | Boolean | Preview execution plan without touching system state | 🟢 Yes |
-| `--timeout=10s` | Duration | Abort hanging operations after specified window | 🟢 Yes |
-| `--force` | Switch | Bypass confirmation prompts and override locks | 🚨 Use with Care |
-| `--json` | Output | Format results as raw machine-readable JSON for piping to `jq` | 🟢 Yes |
+| `--dry-run` | Boolean | Preview execution plan without touching system state | Yes |
+| `--timeout=10s` | Duration | Abort hanging operations after specified window | Yes |
+| `--force` | Switch | Bypass confirmation prompts and override locks | Use with Care |
+| `--json` | Output | Format results as raw machine-readable JSON for piping to `jq` | Yes |
 
 ---
 

@@ -11,7 +11,7 @@ const DOCS_DIR = path.join(__dirname, '..', 'docs');
 const MODULES = [
   {
     dir: '01-operating-systems',
-    name: '🖥️ 1. Operating Systems & Kernels',
+    name: '1. Operating Systems & Kernels',
     pages: [
       { slug: 'linux-core-essentials', title: 'Linux Core Essentials & Navigation', level: 'Basic', desc: 'File system hierarchy, directory navigation, and file manipulation.' },
       { slug: 'linux-kernel-and-sysctl', title: 'Linux Kernel Tuning & Sysctl', level: 'Ultra', desc: 'Tuning vm.swappiness, fs.file-max, net.core parameters, and kernel modules.' },
@@ -29,7 +29,7 @@ const MODULES = [
   },
   {
     dir: '02-networking-protocols',
-    name: '🌐 2. Networking & Protocols',
+    name: '2. Networking & Protocols',
     pages: [
       { slug: 'tcp-udp-sockets-and-ss', title: 'TCP/UDP Sockets & State Inspection', level: 'Basic', desc: 'Socket states, connection backlogs, and diagnosing socket leaks.' },
       { slug: 'dns-deep-dive-and-bind', title: 'DNS Resolution, Dig & Authoritative BIND', level: 'Intermediate', desc: 'Recursive resolution traces, DNSSEC, EDNS, and zone transfers.' },
@@ -47,7 +47,7 @@ const MODULES = [
   },
   {
     dir: '03-version-control-git',
-    name: '🌿 3. Git & Version Control',
+    name: '3. Git & Version Control',
     pages: [
       { slug: 'git-daily-essentials', title: 'Git Daily Essentials & Muscle Memory', level: 'Basic', desc: 'Staging, diffing, branching, pushing, and pulling best practices.' },
       { slug: 'git-undo-and-reflog', title: 'Git Recovery: Reflog, Reset & Revert', level: 'Intermediate', desc: 'Recovering lost commits, soft/mixed/hard resets, and safe reverts.' },
@@ -63,7 +63,7 @@ const MODULES = [
   },
   {
     dir: '04-containers-orchestration',
-    name: '🐳 4. Containers & Kubernetes',
+    name: '4. Containers & Kubernetes',
     pages: [
       { slug: 'docker-core-cli-operations', title: 'Docker Core CLI & Lifecycle Commands', level: 'Basic', desc: 'Managing images, containers, logs, metrics, and inspection metadata.' },
       { slug: 'dockerfile-build-optimization', title: 'Dockerfile Optimization & Multi-Stage Builds', level: 'Intermediate', desc: 'Layer caching, minimal base images, build secrets, and BuildKit.' },
@@ -81,7 +81,7 @@ const MODULES = [
   },
   {
     dir: '05-databases-storage',
-    name: '🗄️ 5. Databases & Storage',
+    name: '5. Databases & Storage',
     pages: [
       { slug: 'postgresql-admin-and-locks', title: 'PostgreSQL: Locks, Slowness & pg_stat', level: 'Intermediate', desc: 'Killing blocking locks, connection saturation, and index bloat.' },
       { slug: 'postgresql-tuning-and-vacuum', title: 'PostgreSQL: VACUUM, Autovacuum & Memory', level: 'Ultra', desc: 'Tuning work_mem, shared_buffers, aggressive vacuuming, and freeze maps.' },
@@ -99,7 +99,7 @@ const MODULES = [
   },
   {
     dir: '06-cloud-devops-iac',
-    name: '☁️ 6. Cloud, DevOps & IaC',
+    name: '6. Cloud, DevOps & IaC',
     pages: [
       { slug: 'aws-cli-operations-and-iam', title: 'AWS CLI: S3, EC2 & IAM Security Forensics', level: 'Intermediate', desc: 'S3 sync parallelism, security group audits, and instance metadata.' },
       { slug: 'azure-cli-operations-and-vm', title: 'Azure CLI (`az`): Resources & Compute', level: 'Intermediate', desc: 'Resource groups, VM scale sets, RBAC role assignment, and key vault.' },
@@ -117,7 +117,7 @@ const MODULES = [
   },
   {
     dir: '07-security-cyber-forensics',
-    name: '🛡️ 7. Security & Cyber Forensics',
+    name: '7. Security & Cyber Forensics',
     pages: [
       { slug: 'linux-privilege-escalation-checks', title: 'Linux Privilege Escalation Auditing', level: 'Ultra', desc: 'SUID binaries, sudo -l permissions, capabilities, and writable paths.' },
       { slug: 'nmap-network-scanning-mastery', title: 'Nmap: Network Recon & NSE Script Engine', level: 'Intermediate', desc: 'SYN scans, banner grabbing, OS detection, and vulnerability scripts.' },
@@ -133,7 +133,7 @@ const MODULES = [
   },
   {
     dir: '08-developer-tooling-languages',
-    name: '⚙️ 8. Developer Tooling & Languages',
+    name: '8. Developer Tooling & Languages',
     pages: [
       { slug: 'nodejs-and-npm-pnpm-yarn', title: 'Node.js, npm, pnpm & Yarn Workspaces', level: 'Basic', desc: 'Resolving dependency conflicts, hoisting, audit fixes, and npx tools.' },
       { slug: 'python-pip-poetry-and-uv', title: 'Python: pip, virtual environments, Poetry & uv', level: 'Basic', desc: 'Blazing fast package management with uv, pyproject.toml, and wheels.' },
@@ -149,7 +149,7 @@ const MODULES = [
   },
   {
     dir: '09-ai-modern-agentic',
-    name: '🤖 9. AI, Agents & Modern Tooling',
+    name: '9. AI, Agents & Modern Tooling',
     pages: [
       { slug: 'llm-directives-and-prompt-engineering', title: 'LLM Directives & Prompt Engineering CLI', level: 'Basic', desc: 'System prompts, reasoning constraints, JSON mode, and temperature tuning.' },
       { slug: 'ai-agents-and-mcp-servers', title: 'AI Agents, Model Context Protocol (MCP) & Tools', level: 'Ultra', desc: 'Tool call schemas, subagent orchestration, and MCP server endpoints.' },
@@ -196,7 +196,7 @@ Get-Command *${page.slug.split('-')[0]}*
 :::
 
 <details>
-<summary>🔍 Explain core flags & parameters</summary>
+<summary>Explain core flags & parameters</summary>
 
 * \`--help\`: Display full parameter manual and syntax reference.
 * \`-v\` / \`--verbose\`: Increase output verbosity to reveal system decisions.
@@ -240,10 +240,10 @@ system-recover --target="${page.slug}" --dry-run
 
 | Flag / Option | Type | Description | Safe in Prod? |
 | :--- | :--- | :--- | :--- |
-| \`--dry-run\` | Boolean | Preview execution plan without touching system state | 🟢 Yes |
-| \`--timeout=10s\` | Duration | Abort hanging operations after specified window | 🟢 Yes |
-| \`--force\` | Switch | Bypass confirmation prompts and override locks | 🚨 Use with Care |
-| \`--json\` | Output | Format results as raw machine-readable JSON for piping to \`jq\` | 🟢 Yes |
+| \`--dry-run\` | Boolean | Preview execution plan without touching system state | Yes |
+| \`--timeout=10s\` | Duration | Abort hanging operations after specified window | Yes |
+| \`--force\` | Switch | Bypass confirmation prompts and override locks | Use with Care |
+| \`--json\` | Output | Format results as raw machine-readable JSON for piping to \`jq\` | Yes |
 
 ---
 

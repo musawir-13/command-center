@@ -1,4 +1,4 @@
-# 🧹 Git: Purging Huge Files & History Cleanup
+# Git: Purging Huge Files & History Cleanup
 
 Remove accidentally committed secrets, API keys, or multi-gigabyte binaries from Git's entire commit history.
 

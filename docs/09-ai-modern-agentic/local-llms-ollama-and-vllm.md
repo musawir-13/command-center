@@ -1,6 +1,6 @@
 # Local LLMs: Ollama & vLLM High-Throughput Serving <span class="badge-mutating">Intermediate</span>
 
-> **Module:** 🤖 9. AI, Agents & Modern Tooling  
+> **Module:** 9. AI, Agents & Modern Tooling  
 > **Topic Focus:** Ollama Modelfiles, GPU quantization, vLLM PagedAttention, and endpoints.
 
 ---
@@ -25,7 +25,7 @@ Get-Command *local*
 :::
 
 <details>
-<summary>🔍 Explain core flags & parameters</summary>
+<summary>Explain core flags & parameters</summary>
 
 * `--help`: Display full parameter manual and syntax reference.
 * `-v` / `--verbose`: Increase output verbosity to reveal system decisions.
@@ -69,10 +69,10 @@ system-recover --target="local-llms-ollama-and-vllm" --dry-run
 
 | Flag / Option | Type | Description | Safe in Prod? |
 | :--- | :--- | :--- | :--- |
-| `--dry-run` | Boolean | Preview execution plan without touching system state | 🟢 Yes |
-| `--timeout=10s` | Duration | Abort hanging operations after specified window | 🟢 Yes |
-| `--force` | Switch | Bypass confirmation prompts and override locks | 🚨 Use with Care |
-| `--json` | Output | Format results as raw machine-readable JSON for piping to `jq` | 🟢 Yes |
+| `--dry-run` | Boolean | Preview execution plan without touching system state | Yes |
+| `--timeout=10s` | Duration | Abort hanging operations after specified window | Yes |
+| `--force` | Switch | Bypass confirmation prompts and override locks | Use with Care |
+| `--json` | Output | Format results as raw machine-readable JSON for piping to `jq` | Yes |
 
 ---
 

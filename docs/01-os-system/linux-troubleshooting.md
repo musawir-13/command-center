@@ -1,4 +1,4 @@
-# 🐧 Linux System Diagnostics & Emergency Recipes
+# Linux System Diagnostics & Emergency Recipes
 
 Comprehensive problem-solving commands when a Linux server is struggling with storage, CPU, RAM, or unresponsive processes.
 
@@ -20,7 +20,7 @@ du -ahx / 2>/dev/null | sort -rh | head -n 20
 ```
 
 <details>
-<summary>🔍 Explain these flags (`du -ahx`)</summary>
+<summary>Explain these flags (`du -ahx`)</summary>
 
 * `-a`: Include individual files in the count, not just directories.
 * `-h`: Human-readable formatting (GB, MB).

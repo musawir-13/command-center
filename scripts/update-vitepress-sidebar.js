@@ -17,7 +17,7 @@ const MODULES = eval(modulesMatch[1]);
 // Construct Sidebar Array
 const sidebar = [
   {
-    text: '⚡ Command Mastery Spectrum',
+    text: 'Command Mastery Spectrum',
     collapsed: false,
     items: [
       { text: 'Basic to Ultra Mastery Matrix', link: '/00-mastery-spectrum/basic-to-ultra' }
@@ -30,14 +30,14 @@ for (const mod of MODULES) {
     text: mod.name,
     collapsed: true,
     items: mod.pages.map(p => ({
-      text: `${p.level === 'Ultra' ? '🔴' : p.level === 'Intermediate' ? '🟡' : '🟢'} ${p.title}`,
+      text: `${p.level === 'Ultra' ? '' : p.level === 'Intermediate' ? '' : ''} ${p.title}`,
       link: `/${mod.dir}/${p.slug}`
     }))
   });
 }
 
 sidebar.push({
-  text: '🔴 Deep Forensics & Tools',
+  text: 'Deep Forensics & Tools',
   collapsed: true,
   items: [
     { text: 'System Internals (strace, tcpdump, bisect)', link: '/07-ultra-power-tools/system-internals' }
@@ -55,11 +55,11 @@ export default defineConfig({
   lastUpdated: false,
 
   themeConfig: {
-    siteTitle: '⚡ Command Center',
+    siteTitle: 'Command Center',
     nav: [
       { text: 'Home', link: '/' },
-      { text: '⚡ Basic-to-Ultra', link: '/00-mastery-spectrum/basic-to-ultra' },
-      { text: '🔴 Forensics', link: '/07-ultra-power-tools/system-internals' },
+      { text: 'Basic-to-Ultra', link: '/00-mastery-spectrum/basic-to-ultra' },
+      { text: 'Forensics', link: '/07-ultra-power-tools/system-internals' },
       { text: 'Command Library', link: '/01-operating-systems/linux-core-essentials' },
       { text: 'Contribute', link: '/contributing' }
     ],
@@ -88,7 +88,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License. 100 Topic Pages for engineers worldwide.',
-      copyright: 'Copyright © 2026 Command Center Contributors'
+      copyright: 'Copyright 2026 Command Center Contributors'
     }
   }
 })

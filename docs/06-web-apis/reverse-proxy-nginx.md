@@ -1,4 +1,4 @@
-# 🚦 Nginx & Reverse Proxy Fixes
+# Nginx & Reverse Proxy Fixes
 
 Fix 502 Bad Gateway errors, syntax check configurations before deployment, and reload with zero downtime.
 

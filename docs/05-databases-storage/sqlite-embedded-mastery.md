@@ -1,6 +1,6 @@
 # SQLite: CLI Commands, WAL Mode & PRAGMA <span class="badge-safe">Basic</span>
 
-> **Module:** 🗄️ 5. Databases & Storage  
+> **Module:** 5. Databases & Storage  
 > **Topic Focus:** Write-Ahead Logging concurrency, in-memory databases, and vacuuming.
 
 ---
@@ -25,7 +25,7 @@ Get-Command *sqlite*
 :::
 
 <details>
-<summary>🔍 Explain core flags & parameters</summary>
+<summary>Explain core flags & parameters</summary>
 
 * `--help`: Display full parameter manual and syntax reference.
 * `-v` / `--verbose`: Increase output verbosity to reveal system decisions.
@@ -69,10 +69,10 @@ system-recover --target="sqlite-embedded-mastery" --dry-run
 
 | Flag / Option | Type | Description | Safe in Prod? |
 | :--- | :--- | :--- | :--- |
-| `--dry-run` | Boolean | Preview execution plan without touching system state | 🟢 Yes |
-| `--timeout=10s` | Duration | Abort hanging operations after specified window | 🟢 Yes |
-| `--force` | Switch | Bypass confirmation prompts and override locks | 🚨 Use with Care |
-| `--json` | Output | Format results as raw machine-readable JSON for piping to `jq` | 🟢 Yes |
+| `--dry-run` | Boolean | Preview execution plan without touching system state | Yes |
+| `--timeout=10s` | Duration | Abort hanging operations after specified window | Yes |
+| `--force` | Switch | Bypass confirmation prompts and override locks | Use with Care |
+| `--json` | Output | Format results as raw machine-readable JSON for piping to `jq` | Yes |
 
 ---
 

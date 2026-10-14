@@ -1,4 +1,4 @@
-# 🔀 Git: Conflicts, Rebasing & Cherry-Picking
+# Git: Conflicts, Rebasing & Cherry-Picking
 
 Resolve merge and rebase conflicts, cleanly rewrite branch history, and port bug fixes across branches.
 

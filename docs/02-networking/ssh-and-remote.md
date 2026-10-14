@@ -1,4 +1,4 @@
-# 🔑 SSH Access, Port Tunneling & Remote Ops
+# SSH Access, Port Tunneling & Remote Ops
 
 Fix permission errors, establish secure tunnels to internal databases, and bypass timeouts.
 

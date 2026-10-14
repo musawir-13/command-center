@@ -1,4 +1,4 @@
-# 🌿 Git: Undo, Uncommit & Lost Code Recovery
+# Git: Undo, Uncommit & Lost Code Recovery
 
 Commands to recover lost commits, undo accidental resets, discard local changes, and fix mistakes safely.
 

@@ -1,4 +1,4 @@
-# 🍏 macOS Terminal Diagnostics & Fixes
+# macOS Terminal Diagnostics & Fixes
 
 Troubleshooting commands for macOS developers, dealing with system ports, memory, DNS caches, and Homebrew.
 

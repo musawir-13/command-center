@@ -7,31 +7,27 @@ hero:
   tagline: "Instant, copy-pasteable commands and recipes for Linux, Windows, macOS, DevOps, Networks, and Databases. Built to solve real problems fast."
   actions:
     - theme: brand
-      text: ⚡ Basic-to-Ultra Spectrum
+      text: Basic-to-Ultra Spectrum
       link: /00-mastery-spectrum/basic-to-ultra
     - theme: alt
-      text: 🔴 Ultra Forensics
+      text: Ultra Forensics
       link: /07-ultra-power-tools/system-internals
     - theme: alt
-      text: 🚨 Emergency Problem Solver
+      text: Emergency Problem Solver
       link: /01-os-system/linux-troubleshooting
 
 features:
-  - icon: 🚨
-    title: Problem-First Solutions
+  - title: Problem-First Solutions
     details: Organized by what went wrong ("Port in use", "Out of Memory", "Commit vanished") rather than dry alphabetical man-pages.
-  - icon: ⚡
-    title: Zero-Fluff & Copy-Paste Ready
+  - title: Zero-Fluff & Copy-Paste Ready
     details: Every command includes real-world parameter explanations, expected outputs, and copy-ready snippets.
-  - icon: 🛡️
-    title: Safety Flags & Risk Warnings
+  - title: Safety Flags & Risk Warnings
     details: Destructive commands are explicitly labeled with safety warnings to prevent unintended production downtime.
-  - icon: 🌐
-    title: Cross-Platform & Full-Stack
+  - title: Cross-Platform & Full-Stack
     details: Covers Linux, Windows PowerShell, macOS, Docker, Kubernetes, Git, PostgreSQL, MySQL, Redis, and Web Protocols.
 ---
 
-## 🧭 Emergency Quick Jump Matrix
+## Emergency Quick Jump Matrix
 
 | Problem Scenario | Fastest Command | Guide Link |
 | :--- | :--- | :--- |

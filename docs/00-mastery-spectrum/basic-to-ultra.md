@@ -1,16 +1,16 @@
-# ⚡ The Command Mastery Spectrum: Basic to Ultra
+# The Command Mastery Spectrum: Basic to Ultra
 
 Every command in computing exists on a spectrum of capability. This guide maps commands across **3 Mastery Levels**:
 
-* 🟢 **Level 1: Basic / Essentials** (What you learn on day one)
-* 🟡 **Level 2: Intermediate / Problem Solver** (What saves hours of manual work)
-* 🔴 **Level 3: Ultra / God-Tier** (The 1% power commands that solve "impossible" production crises)
+* **Level 1: Basic / Essentials** (What you learn on day one)
+* **Level 2: Intermediate / Problem Solver** (What saves hours of manual work)
+* **Level 3: Ultra / God-Tier** (The 1% power commands that solve "impossible" production crises)
 
 ---
 
 ## 1. File & Directory Navigation
 
-| Task | 🟢 Level 1 (Basic) | 🟡 Level 2 (Intermediate) | 🔴 Level 3 (Ultra) |
+| Task | Level 1 (Basic) | Level 2 (Intermediate) | Level 3 (Ultra) |
 | :--- | :--- | :--- | :--- |
 | **List files** | `ls -l` | `ls -lah --sort=size` (Human-readable, sorted by size) | `eza -la --tree --level=2 --git` / `tree -L 2 -h` |
 | **Find files** | `find . -name "*.log"` | `find . -type f -mtime -2 -size +100M` (Modified in last 48h, >100MB) | `find / -type f -name "*.log" -exec du -h {} + \| sort -rh \| head -20` |
@@ -22,7 +22,7 @@ Every command in computing exists on a spectrum of capability. This guide maps c
 
 ## 2. Process Control & System Forensics
 
-| Task | 🟢 Level 1 (Basic) | 🟡 Level 2 (Intermediate) | 🔴 Level 3 (Ultra) |
+| Task | Level 1 (Basic) | Level 2 (Intermediate) | Level 3 (Ultra) |
 | :--- | :--- | :--- | :--- |
 | **View processes** | `ps aux` | `ps -eo pid,ppid,user,%cpu,%mem,cmd --sort=-%cpu \| head -15` | `pidstat -urd -p ALL 1 3` (Per-process CPU, RAM, & Disk I/O breakdown) |
 | **Kill process** | `kill -9 <PID>` | `pkill -f "python worker.py"` (Kill by command string) | `fuser -k -9 8080/tcp` (Instant kill whatever holds socket 8080) |
@@ -33,7 +33,7 @@ Every command in computing exists on a spectrum of capability. This guide maps c
 
 ## 3. Data & Text Processing
 
-| Task | 🟢 Level 1 (Basic) | 🟡 Level 2 (Intermediate) | 🔴 Level 3 (Ultra) |
+| Task | Level 1 (Basic) | Level 2 (Intermediate) | Level 3 (Ultra) |
 | :--- | :--- | :--- | :--- |
 | **Filter output** | `grep "text"` | `awk '{print $1, $3}' file.txt` | `awk '$9 ~ /50[0-9]/ {print $1, $7, $9}' access.log \| sort \| uniq -c \| sort -nr` |
 | **Batch replace in files** | Search & replace in editor | `sed -i 's/foo/bar/g' file.txt` | `git grep -l "old_api" \| xargs sed -i 's/old_api/new_api/g'` |
@@ -44,7 +44,7 @@ Every command in computing exists on a spectrum of capability. This guide maps c
 
 ## 4. Networking & Connectivity
 
-| Task | 🟢 Level 1 (Basic) | 🟡 Level 2 (Intermediate) | 🔴 Level 3 (Ultra) |
+| Task | Level 1 (Basic) | Level 2 (Intermediate) | Level 3 (Ultra) |
 | :--- | :--- | :--- | :--- |
 | **Ping host** | `ping google.com` | `mtr --report google.com` (Packet loss hop-by-hop) | `traceroute -T -p 443 google.com` (TCP SYN traceroute through firewall) |
 | **Port scan** | `telnet host 80` | `nc -zv host 80-85` | `nmap -sV -sC -p 22,80,443,5432 -T4 host` (Version & vuln scan) |
@@ -55,7 +55,7 @@ Every command in computing exists on a spectrum of capability. This guide maps c
 
 ## 5. Git & Version Control
 
-| Task | 🟢 Level 1 (Basic) | 🟡 Level 2 (Intermediate) | 🔴 Level 3 (Ultra) |
+| Task | Level 1 (Basic) | Level 2 (Intermediate) | Level 3 (Ultra) |
 | :--- | :--- | :--- | :--- |
 | **Commit history** | `git log` | `git log --oneline --graph --all` | `git log -S "StripeAPISecret" --source --all -p` (Find when a string was introduced) |
 | **Undo commit** | Delete file and commit | `git reset --soft HEAD~1` | `git reflog` + `git checkout -b rescue <SHA>` (Restore deleted branches/commits) |
@@ -66,7 +66,7 @@ Every command in computing exists on a spectrum of capability. This guide maps c
 
 ## 6. Docker & Containers
 
-| Task | 🟢 Level 1 (Basic) | 🟡 Level 2 (Intermediate) | 🔴 Level 3 (Ultra) |
+| Task | Level 1 (Basic) | Level 2 (Intermediate) | Level 3 (Ultra) |
 | :--- | :--- | :--- | :--- |
 | **Run container** | `docker run nginx` | `docker run -d -p 8080:80 --name web --restart always nginx` | `docker run -d --memory="1g" --cpus="1.5" --pids-limit 100 --read-only nginx` |
 | **Clean up disk** | `docker rm <id>` | `docker system prune -f` | `docker system prune -a --volumes --force` + `docker builder prune -a` |

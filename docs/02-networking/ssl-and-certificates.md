@@ -1,4 +1,4 @@
-# 🔒 SSL & TLS Certificate Debugging
+# SSL & TLS Certificate Debugging
 
 Diagnose expired certificates, mismatched private keys, TLS handshake failures, and intermediate chain issues with OpenSSL.
 

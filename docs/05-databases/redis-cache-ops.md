@@ -1,4 +1,4 @@
-# 🔴 Redis: Keys, Memory & Evictions
+# Redis: Keys, Memory & Evictions
 
 Diagnose high memory consumption, runaway keys, slow operations, and latency spikes in Redis.
 

@@ -1,24 +1,24 @@
-# ⚡ Command Center
+# Command Center
 
 > **The Universal Problem-Solving Command Knowledge Base.**  
 > Real-world, copy-pasteable commands, emergency diagnostics, and troubleshooting recipes for developers, sysadmins, DevOps, and database engineers.
 
 ---
 
-## 📖 What is Command Center?
+## What is Command Center?
 
 Most command manuals (like `man` pages) are arranged alphabetically by flag (`-a`, `-b`, `-c`) without explaining **which command actually fixes your current crisis**.
 
 **Command Center** is built **problem-first**:
-* 🛑 *"Port 8080 is locked by an unknown process"*
-* 🛑 *"Linux disk is 100% full, but I deleted the log files"*
-* 🛑 *"Accidentally ran `git reset --hard` and lost my branch"*
-* 🛑 *"Docker is taking up 60GB of hard drive space"*
-* 🛑 *"PostgreSQL database has locked tables and slow queries"*
+* *"Port 8080 is locked by an unknown process"*
+* *"Linux disk is 100% full, but I deleted the log files"*
+* *"Accidentally ran `git reset --hard` and lost my branch"*
+* *"Docker is taking up 60GB of hard drive space"*
+* *"PostgreSQL database has locked tables and slow queries"*
 
 ---
 
-## ⚡ Instant Terminal Search (CLI Companion)
+## Instant Terminal Search (CLI Companion)
 
 You don't even need to open a browser. Search across all commands and error scenarios in your terminal:
 
@@ -32,25 +32,25 @@ node bin/cli.js "strace"
 
 ---
 
-## 📚 100-Page Engineering Taxonomy (9 Core Modules)
+## 100-Page Engineering Taxonomy (9 Core Modules)
 
 Command Center contains **100 dedicated multi-page guides** covering the entire computing stack:
 
 | Module | Topic Domain | Page Count | Key Coverage |
 | :--- | :--- | :---: | :--- |
-| **01** | **🖥️ Operating Systems & Kernels** | **12 Pages** | Linux Core, Sysctl Tuning, Memory/OOM, Processes, systemd, PowerShell, Registry/WMI, macOS, BSD, Alpine, Hardware, Package Managers |
-| **02** | **🌐 Networking & Wire Protocols** | **12 Pages** | TCP/UDP Sockets, DNS/BIND, SSL/TLS, SSH Tunnels, HTTP/1/2/3, iptables/nftables, Routing/BGP, tcpdump, WireGuard, Nginx, HAProxy, gRPC |
-| **03** | **🌿 Git & Version Control Mastery** | **10 Pages** | Daily Essentials, Reflog Recovery, Branching, Interactive Rebase, Bisect/Blame, Worktrees, Hooks, Secret Sanitation, Internals, GitHub/GitLab CLI |
-| **04** | **🐳 Containers & Orchestration** | **12 Pages** | Docker Core, Dockerfile Tuning, Docker Compose, Volumes, Networking, Rootless, Podman, kubectl, Pod Debugging, Helm, Ingress, Local Clusters |
-| **05** | **🗄️ Databases & Storage Engines** | **12 Pages** | PostgreSQL Locks, Vacuum/Tuning, MySQL Processlist, InnoDB Deadlocks, Redis Keys, Redis Cluster, MongoDB, SQLite, Elasticsearch, Kafka, Backups, ZFS/LVM |
-| **06** | **☁️ Cloud, DevOps & IaC** | **12 Pages** | AWS CLI, Azure CLI, Google Cloud, Terraform State, Ansible Playbooks, GitHub Actions, GitLab CI/CD, Prometheus PromQL, Grafana, Cron/Timers, Vault, Cloudflare |
-| **07** | **🛡️ Cyber Security & Forensics** | **10 Pages** | Linux PrivEsc, Nmap Scanning, Web Vulnerabilities, Fail2ban, SELinux/AppArmor, Auditd, Memory Forensics, Hashcat, GPG Signing, Trivy Scanner |
-| **08** | **⚙️ Developer Tooling & Languages** | **10 Pages** | Node/npm/pnpm, Python/uv/poetry, Rust/cargo, Go Toolchain, JVM jcmd, C/C++ CMake, Awk/Sed, tmux, Modern CLI (fzf/rg/eza/bat), Regex Reference |
-| **09** | **🤖 AI, Agents & Machine Learning** | **10 Pages** | LLM Directives, Agent & MCP Servers, Vector DBs (Qdrant), Hugging Face, GPU nvidia-smi, OpenAI/Anthropic CLI, Ollama/vLLM, Benchmarks, Fine-Tuning, Tokenizers |
+| **01** | **Operating Systems & Kernels** | **12 Pages** | Linux Core, Sysctl Tuning, Memory/OOM, Processes, systemd, PowerShell, Registry/WMI, macOS, BSD, Alpine, Hardware, Package Managers |
+| **02** | **Networking & Wire Protocols** | **12 Pages** | TCP/UDP Sockets, DNS/BIND, SSL/TLS, SSH Tunnels, HTTP/1/2/3, iptables/nftables, Routing/BGP, tcpdump, WireGuard, Nginx, HAProxy, gRPC |
+| **03** | **Git & Version Control Mastery** | **10 Pages** | Daily Essentials, Reflog Recovery, Branching, Interactive Rebase, Bisect/Blame, Worktrees, Hooks, Secret Sanitation, Internals, GitHub/GitLab CLI |
+| **04** | **Containers & Orchestration** | **12 Pages** | Docker Core, Dockerfile Tuning, Docker Compose, Volumes, Networking, Rootless, Podman, kubectl, Pod Debugging, Helm, Ingress, Local Clusters |
+| **05** | **Databases & Storage Engines** | **12 Pages** | PostgreSQL Locks, Vacuum/Tuning, MySQL Processlist, InnoDB Deadlocks, Redis Keys, Redis Cluster, MongoDB, SQLite, Elasticsearch, Kafka, Backups, ZFS/LVM |
+| **06** | **Cloud, DevOps & IaC** | **12 Pages** | AWS CLI, Azure CLI, Google Cloud, Terraform State, Ansible Playbooks, GitHub Actions, GitLab CI/CD, Prometheus PromQL, Grafana, Cron/Timers, Vault, Cloudflare |
+| **07** | **Cyber Security & Forensics** | **10 Pages** | Linux PrivEsc, Nmap Scanning, Web Vulnerabilities, Fail2ban, SELinux/AppArmor, Auditd, Memory Forensics, Hashcat, GPG Signing, Trivy Scanner |
+| **08** | **Developer Tooling & Languages** | **10 Pages** | Node/npm/pnpm, Python/uv/poetry, Rust/cargo, Go Toolchain, JVM jcmd, C/C++ CMake, Awk/Sed, tmux, Modern CLI (fzf/rg/eza/bat), Regex Reference |
+| **09** | **AI, Agents & Machine Learning** | **10 Pages** | LLM Directives, Agent & MCP Servers, Vector DBs (Qdrant), Hugging Face, GPU nvidia-smi, OpenAI/Anthropic CLI, Ollama/vLLM, Benchmarks, Fine-Tuning, Tokenizers |
 
 ---
 
-## 🧭 Quick Problem Solver Matrix
+## Quick Problem Solver Matrix
 
 | Scenario / Problem | Fastest Command | Documentation Link |
 | :--- | :--- | :--- |
@@ -67,7 +67,7 @@ Command Center contains **100 dedicated multi-page guides** covering the entire 
 
 ---
 
-## 🗂️ Knowledge Base Structure
+## Knowledge Base Structure
 
 ```
 Command center/
@@ -112,7 +112,7 @@ Command center/
 
 ---
 
-## 💻 Running the Searchable Web Docs Locally
+## Running the Searchable Web Docs Locally
 
 Command Center comes with a high-performance **VitePress** documentation site equipped with full offline instant client-side search (`Ctrl+K`):
 
@@ -129,12 +129,12 @@ npm run docs:build
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from engineers across all disciplines! See [`CONTRIBUTING.md`](docs/contributing.md) to add new problem recipes or improve existing ones.
 
 ---
 
-## 📄 License
+## License
 
 This repository is licensed under the [MIT License](LICENSE).

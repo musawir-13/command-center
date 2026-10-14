@@ -1,4 +1,4 @@
-# 🔌 Ports, Sockets & Network Connectivity
+# Ports, Sockets & Network Connectivity
 
 Essential commands for debugging firewalls, socket states, connectivity drops, and listening ports across platforms.
 
@@ -24,7 +24,7 @@ Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue | Select-Obje
 :::
 
 <details>
-<summary>🔍 What do these flags mean?</summary>
+<summary>What do these flags mean?</summary>
 
 * **Linux (`ss -tulpn`):**
   * `-t`: TCP sockets

@@ -1,4 +1,4 @@
-# ⚡ cURL & HTTP Diagnostic Suite
+# cURL & HTTP Diagnostic Suite
 
 Diagnose API latency breakdowns, test headers, download files, and troubleshoot REST/GraphQL endpoints.
 

@@ -1,4 +1,4 @@
-# 🪟 Windows & PowerShell Emergency Recipes
+# Windows & PowerShell Emergency Recipes
 
 Essential PowerShell solutions for developers, sysadmins, and engineers dealing with ports, stuck services, script restrictions, and diagnostic logs.
 

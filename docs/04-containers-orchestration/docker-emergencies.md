@@ -1,4 +1,4 @@
-# 🐳 Docker Emergencies & Space Reclaim
+# Docker Emergencies & Space Reclaim
 
 Resolve disk space exhaustion, exited containers with error codes, and orphaned networks.
 

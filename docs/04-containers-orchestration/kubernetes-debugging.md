@@ -1,4 +1,4 @@
-# ☸️ Kubernetes Pod & Cluster Debugging
+# Kubernetes Pod & Cluster Debugging
 
 Diagnose `CrashLoopBackOff`, `ImagePullBackOff`, `Pending` pods, and cluster connectivity.
 

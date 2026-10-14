@@ -1,10 +1,10 @@
-# 🤝 Contributing to Command Center
+# Contributing to Command Center
 
 Thank you for contributing! Our mission is to build the world's most accessible, problem-first command knowledge base to save engineers and developers hours of debugging frustration.
 
 ---
 
-## 📌 Philosophy: Problem-First
+## Philosophy: Problem-First
 
 Every guide should be structured around:
 1. **The Real Problem:** What went wrong? What is the error message or symptom?
@@ -14,7 +14,7 @@ Every guide should be structured around:
 
 ---
 
-## 🛠️ Recipe Template
+## Recipe Template
 
 When adding a new recipe, please use this format:
 
@@ -29,12 +29,12 @@ command --flag argument
 
 * **Key Flags:**
   * \`--flag\`: Description of what this does.
-* ⚠️ **Safety Caution:** (If applicable)
+* **Safety Caution:** (If applicable)
 ```
 
 ---
 
-## 🚀 Local Development Setup
+## Local Development Setup
 
 To run and preview the documentation site locally:
 
@@ -54,7 +54,7 @@ npm run docs:dev
 
 ---
 
-## 🧪 Building for Production
+## Building for Production
 
 ```bash
 npm run docs:build

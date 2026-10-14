@@ -1,4 +1,4 @@
-# 🌐 DNS & Domain Investigation Recipes
+# DNS & Domain Investigation Recipes
 
 Debug domain propagation, record misconfigurations, TTL caching, and resolution latency.
 
