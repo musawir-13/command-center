@@ -14,7 +14,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '⚡ Basic-to-Ultra', link: '/00-mastery-spectrum/basic-to-ultra' },
       { text: '🔴 Forensics', link: '/07-ultra-power-tools/system-internals' },
-      { text: '📚 Command Library', link: '/01-operating-systems/linux-core-essentials' },
+      { text: 'Command Library', link: '/01-operating-systems/linux-core-essentials' },
       { text: 'Contribute', link: '/contributing' }
     ],
 
