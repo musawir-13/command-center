@@ -32,15 +32,21 @@ node bin/cli.js "strace"
 
 ---
 
-## 📊 The 3 Mastery Tiers: From Basic to Ultra
+## 📚 100-Page Engineering Taxonomy (9 Core Modules)
 
-Every problem and command is categorized into 3 levels:
-* 🟢 **Level 1: Basic / Essentials** — Everyday muscle memory (`ls`, `grep`, `ps`, `kill`, `curl`, `git add`)
-* 🟡 **Level 2: Intermediate / Practical** — Workday accelerators (`find -mtime`, `tar -czvf`, `ss -tulpn`, `git stash`)
-* 🔴 **Level 3: Ultra / God-Tier** — SRE & Kernel power tools (`strace`, `tcpdump`, `jq` surgery, `git bisect run`, `socat`, `xargs -P`)
+Command Center contains **100 dedicated multi-page guides** covering the entire computing stack:
 
-👉 **[View the Complete Basic-to-Ultra Mastery Matrix](docs/00-mastery-spectrum/basic-to-ultra.md)**  
-👉 **[View the Ultra Forensics Guide](docs/07-ultra-power-tools/system-internals.md)**
+| Module | Topic Domain | Page Count | Key Coverage |
+| :--- | :--- | :---: | :--- |
+| **01** | **🖥️ Operating Systems & Kernels** | **12 Pages** | Linux Core, Sysctl Tuning, Memory/OOM, Processes, systemd, PowerShell, Registry/WMI, macOS, BSD, Alpine, Hardware, Package Managers |
+| **02** | **🌐 Networking & Wire Protocols** | **12 Pages** | TCP/UDP Sockets, DNS/BIND, SSL/TLS, SSH Tunnels, HTTP/1/2/3, iptables/nftables, Routing/BGP, tcpdump, WireGuard, Nginx, HAProxy, gRPC |
+| **03** | **🌿 Git & Version Control Mastery** | **10 Pages** | Daily Essentials, Reflog Recovery, Branching, Interactive Rebase, Bisect/Blame, Worktrees, Hooks, Secret Sanitation, Internals, GitHub/GitLab CLI |
+| **04** | **🐳 Containers & Orchestration** | **12 Pages** | Docker Core, Dockerfile Tuning, Docker Compose, Volumes, Networking, Rootless, Podman, kubectl, Pod Debugging, Helm, Ingress, Local Clusters |
+| **05** | **🗄️ Databases & Storage Engines** | **12 Pages** | PostgreSQL Locks, Vacuum/Tuning, MySQL Processlist, InnoDB Deadlocks, Redis Keys, Redis Cluster, MongoDB, SQLite, Elasticsearch, Kafka, Backups, ZFS/LVM |
+| **06** | **☁️ Cloud, DevOps & IaC** | **12 Pages** | AWS CLI, Azure CLI, Google Cloud, Terraform State, Ansible Playbooks, GitHub Actions, GitLab CI/CD, Prometheus PromQL, Grafana, Cron/Timers, Vault, Cloudflare |
+| **07** | **🛡️ Cyber Security & Forensics** | **10 Pages** | Linux PrivEsc, Nmap Scanning, Web Vulnerabilities, Fail2ban, SELinux/AppArmor, Auditd, Memory Forensics, Hashcat, GPG Signing, Trivy Scanner |
+| **08** | **⚙️ Developer Tooling & Languages** | **10 Pages** | Node/npm/pnpm, Python/uv/poetry, Rust/cargo, Go Toolchain, JVM jcmd, C/C++ CMake, Awk/Sed, tmux, Modern CLI (fzf/rg/eza/bat), Regex Reference |
+| **09** | **🤖 AI, Agents & Machine Learning** | **10 Pages** | LLM Directives, Agent & MCP Servers, Vector DBs (Qdrant), Hugging Face, GPU nvidia-smi, OpenAI/Anthropic CLI, Ollama/vLLM, Benchmarks, Fine-Tuning, Tokenizers |
 
 ---
 
